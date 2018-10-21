@@ -1,0 +1,14 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.sim/sim_1/impl/func/simFSM_func_impl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module Divider
+INFO: [VRFC 10-311] analyzing module FSM
+INFO: [VRFC 10-311] analyzing module button_signal
+INFO: [VRFC 10-311] analyzing module button_signal_0
+INFO: [VRFC 10-311] analyzing module button_signal_1
+INFO: [VRFC 10-311] analyzing module choose_mode
+INFO: [VRFC 10-311] analyzing module time_dec
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sim_1/new/simFSM.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simFSM
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.sim/sim_1/impl/func/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+WARNING: [VRFC 10-1195] overwriting previous definition of module glbl [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.sim/sim_1/impl/func/glbl.v:6]

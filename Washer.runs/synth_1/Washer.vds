@@ -1,0 +1,1260 @@
+#-----------------------------------------------------------
+# Vivado v2015.2 (64-bit)
+# SW Build 1266856 on Fri Jun 26 16:35:25 MDT 2015
+# IP Build 1264090 on Wed Jun 24 14:22:01 MDT 2015
+# Start of session at: Tue Oct 16 15:44:40 2018
+# Process ID: 12108
+# Log file: C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.runs/synth_1/Washer.vds
+# Journal file: C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source Washer.tcl -notrace
+Command: synth_design -top Washer -part xc7a100tcsg324-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a100t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a100t'
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:13 . Memory (MB): peak = 263.629 ; gain = 92.535
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'Washer' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Washer.v:3]
+INFO: [Synth 8-638] synthesizing module 'button_signal' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/button_signal.v:3]
+INFO: [Synth 8-256] done synthesizing module 'button_signal' (1#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/button_signal.v:3]
+INFO: [Synth 8-638] synthesizing module 'FSM' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/FSM.v:4]
+	Parameter OFF bound to: 0 - type: integer 
+	Parameter CHOOSE bound to: 1 - type: integer 
+	Parameter WASH bound to: 2 - type: integer 
+	Parameter FLOAT bound to: 3 - type: integer 
+	Parameter DRY bound to: 4 - type: integer 
+	Parameter PAUSE bound to: 5 - type: integer 
+	Parameter FINISH bound to: 6 - type: integer 
+	Parameter WATER bound to: 0 - type: integer 
+	Parameter WASHING bound to: 1 - type: integer 
+	Parameter RELEASE bound to: 2 - type: integer 
+	Parameter FLOATING bound to: 3 - type: integer 
+	Parameter DRIGHT bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Divider' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Divider.v:4]
+	Parameter N bound to: 50000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider' (2#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Divider.v:4]
+INFO: [Synth 8-638] synthesizing module 'choose_mode' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/choose_mode.v:3]
+	Parameter OFF bound to: 0 - type: integer 
+	Parameter CHOOSE bound to: 1 - type: integer 
+	Parameter WASH bound to: 2 - type: integer 
+	Parameter FLOAT bound to: 3 - type: integer 
+	Parameter DRY bound to: 4 - type: integer 
+	Parameter PAUSE bound to: 5 - type: integer 
+	Parameter FINISH bound to: 6 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/choose_mode.v:18]
+INFO: [Synth 8-256] done synthesizing module 'choose_mode' (3#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/choose_mode.v:3]
+INFO: [Synth 8-638] synthesizing module 'time_dec' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/time_dec.v:3]
+	Parameter OFF bound to: 0 - type: integer 
+	Parameter CHOOSE bound to: 1 - type: integer 
+	Parameter WASH bound to: 2 - type: integer 
+	Parameter FLOAT bound to: 3 - type: integer 
+	Parameter DRY bound to: 4 - type: integer 
+	Parameter PAUSE bound to: 5 - type: integer 
+	Parameter FINISH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'time_dec' (4#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/time_dec.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/FSM.v:61]
+INFO: [Synth 8-4471] merging register 'timetable_reg[0][7:0]' into 'timetable_reg[2][7:0]' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/FSM.v:47]
+INFO: [Synth 8-256] done synthesizing module 'FSM' (5#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/FSM.v:4]
+INFO: [Synth 8-638] synthesizing module 'seg_7_led' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/seg_7_led.v:3]
+	Parameter OFF bound to: 0 - type: integer 
+	Parameter CHOOSE bound to: 1 - type: integer 
+	Parameter WASH bound to: 2 - type: integer 
+	Parameter FLOAT bound to: 3 - type: integer 
+	Parameter DRY bound to: 4 - type: integer 
+	Parameter PAUSE bound to: 5 - type: integer 
+	Parameter FINISH bound to: 6 - type: integer 
+	Parameter WATER bound to: 0 - type: integer 
+	Parameter WASHING bound to: 1 - type: integer 
+	Parameter RELEASE bound to: 2 - type: integer 
+	Parameter FLOATING bound to: 3 - type: integer 
+	Parameter DRIGHT bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Divider__parameterized0' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Divider.v:4]
+	Parameter N bound to: 10000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider__parameterized0' (5#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Divider.v:4]
+INFO: [Synth 8-638] synthesizing module 'data_select' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/data_select.v:3]
+	Parameter OFF bound to: 0 - type: integer 
+	Parameter CHOOSE bound to: 1 - type: integer 
+	Parameter WASH bound to: 2 - type: integer 
+	Parameter FLOAT bound to: 3 - type: integer 
+	Parameter DRY bound to: 4 - type: integer 
+	Parameter PAUSE bound to: 5 - type: integer 
+	Parameter FINISH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'data_select' (6#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/data_select.v:3]
+INFO: [Synth 8-638] synthesizing module 'seg_decoder' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/seg_decoder.v:3]
+WARNING: [Synth 8-85] always block has no event control specified [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/seg_decoder.v:7]
+INFO: [Synth 8-256] done synthesizing module 'seg_decoder' (7#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/seg_decoder.v:3]
+INFO: [Synth 8-256] done synthesizing module 'seg_7_led' (8#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/seg_7_led.v:3]
+INFO: [Synth 8-638] synthesizing module 'light_ctrl' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:4]
+	Parameter OFF bound to: 0 - type: integer 
+	Parameter CHOOSE bound to: 1 - type: integer 
+	Parameter WASH bound to: 2 - type: integer 
+	Parameter FLOAT bound to: 3 - type: integer 
+	Parameter DRY bound to: 4 - type: integer 
+	Parameter PAUSE bound to: 5 - type: integer 
+	Parameter FINISH bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'bling' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/bling.v:3]
+INFO: [Synth 8-638] synthesizing module 'Divider__parameterized1' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Divider.v:4]
+	Parameter N bound to: 20000000 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'Divider__parameterized1' (8#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Divider.v:4]
+INFO: [Synth 8-256] done synthesizing module 'bling' (9#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/bling.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:69]
+INFO: [Synth 8-256] done synthesizing module 'light_ctrl' (10#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Washer' (11#1) [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/Washer.v:3]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:15 . Memory (MB): peak = 298.078 ; gain = 126.984
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:15 . Memory (MB): peak = 298.078 ; gain = 126.984
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7a100tcsg324-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc]
+Finished Parsing XDC File [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.024 . Memory (MB): peak = 603.918 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a100tcsg324-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 44 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 44 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 45 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 45 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 46 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 46 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 47 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 47 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 48 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 48 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 49 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 49 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 50 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 50 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 51 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 51 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 54 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 54 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 55 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 55 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 56 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 56 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 57 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 57 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 58 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 58 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 59 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 59 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 60 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 61 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 63 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 64 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 66 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 66 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 67 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 67 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 68 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 70 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 71 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 72 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 73 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 74 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 76 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 76 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 77 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 77 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 78 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 78 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:27 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "CLK" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-802] inferred FSM for state register 'mode_reg' in module 'choose_mode'
+INFO: [Synth 8-5544] ROM "mode" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "mode" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "cur_time" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "state" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "CLK" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "data" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+ROM size is below threshold of ROM address width. It will be mapped to LUTs
+INFO: [Synth 8-5545] ROM "CLK" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "waterLight" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                     Old Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              000 |                              000
+                 iSTATE0 |                              001 |                              111
+                 iSTATE1 |                              010 |                              100
+                 iSTATE2 |                              011 |                              110
+                 iSTATE3 |                              100 |                              010
+                 iSTATE4 |                              101 |                              011
+                 iSTATE5 |                              110 |                              001
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'mode_reg' using encoding 'sequential' in module 'choose_mode'
+WARNING: [Synth 8-327] inferring latch for variable 'total_time_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/seg_7_led.v:38]
+WARNING: [Synth 8-327] inferring latch for variable 'water_level_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/seg_7_led.v:82]
+WARNING: [Synth 8-327] inferring latch for variable 'buzzy2_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:77]
+WARNING: [Synth 8-327] inferring latch for variable 'washLight_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:73]
+WARNING: [Synth 8-327] inferring latch for variable 'floatLight_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:76]
+WARNING: [Synth 8-327] inferring latch for variable 'drightLight_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:75]
+WARNING: [Synth 8-327] inferring latch for variable 'waterLight_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:72]
+WARNING: [Synth 8-327] inferring latch for variable 'releaseLight_reg' [C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/light_ctrl.v:74]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:19 ; elapsed = 00:00:29 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 3     
+	   2 Input      8 Bit       Adders := 4     
+	   4 Input      8 Bit       Adders := 1     
+	   3 Input      8 Bit       Adders := 5     
+	   2 Input      5 Bit       Adders := 2     
+	   2 Input      4 Bit       Adders := 4     
++---Registers : 
+	               32 Bit    Registers := 3     
+	                8 Bit    Registers := 7     
+	                4 Bit    Registers := 1     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 17    
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 38    
+	   7 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+	   8 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module button_signal 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 2     
+Module Divider 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module choose_mode 
+Detailed RTL Component Info : 
++---Muxes : 
+	   7 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+Module time_dec 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+	   3 Input      1 Bit        Muxes := 1     
+Module FSM 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 2     
+	   4 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 4     
+	                3 Bit    Registers := 4     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 6     
+	   5 Input      3 Bit        Muxes := 2     
+	   4 Input      3 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 2     
+	   7 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 8     
+	   7 Input      1 Bit        Muxes := 4     
+Module Divider__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module data_select 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
++---Muxes : 
+	   3 Input      8 Bit        Muxes := 1     
+	   8 Input      8 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 2     
+	   6 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+Module seg_decoder 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	  11 Input      8 Bit        Muxes := 1     
+Module seg_7_led 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input      8 Bit       Adders := 5     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 2     
++---Muxes : 
+	   4 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 8     
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 1     
+	   7 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+Module Divider__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
+Module bling 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module light_ctrl 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 28    
+	   8 Input      1 Bit        Muxes := 8     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 240 (col length:80)
+BRAMs: 270 (col length: RAMB18 80 RAMB36 40)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+Start Parallel Synthesis Optimization  : Time (s): cpu = 00:00:20 ; elapsed = 00:00:29 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+Start Cross Boundary Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5545] ROM "divider/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "divider/CLK" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "state" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5545] ROM "counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "CLK" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "Bling/bling_div/counter" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5545] ROM "Bling/bling_div/CLK" won't be mapped to RAM because address size (32) is larger than maximum supported(18)
+INFO: [Synth 8-5546] ROM "waterLight" won't be mapped to RAM because it is too sparse
+---------------------------------------------------------------------------------
+Finished Cross Boundary Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+Finished Parallel Reinference  : Time (s): cpu = 00:00:21 ; elapsed = 00:00:30 . Memory (MB): peak = 603.918 ; gain = 432.824
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (fsm/\timetable_reg[3][0] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (fsm/\timetable_reg[4][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (seg_led/\da_sel/data_reg[5] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (seg_led/\da_sel/AN_reg[1] )
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][7] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][6] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][3] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][5] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][6] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][7] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][6] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][7] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][4] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][5] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][5] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][2] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][4] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][4] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][3] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][3] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][1] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[1][0] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][2] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][2] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][0] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[3][1] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][1] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\timetable_reg[4][0] ) is unused and will be removed from module FSM.
+WARNING: [Synth 8-3332] Sequential element (\da_sel/data_reg[7] ) is unused and will be removed from module seg_7_led.
+WARNING: [Synth 8-3332] Sequential element (\da_sel/data_reg[6] ) is unused and will be removed from module seg_7_led.
+WARNING: [Synth 8-3332] Sequential element (\da_sel/data_reg[5] ) is unused and will be removed from module seg_7_led.
+WARNING: [Synth 8-3332] Sequential element (\da_sel/AN_reg[1] ) is unused and will be removed from module seg_7_led.
+WARNING: [Synth 8-3332] Sequential element (\da_sel/AN_reg[0] ) is unused and will be removed from module seg_7_led.
+---------------------------------------------------------------------------------
+Start Area Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+Finished Parallel Area Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 603.918 ; gain = 432.824
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+Finished Parallel Synthesis Optimization  : Time (s): cpu = 00:00:26 ; elapsed = 00:00:37 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 44 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 44 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 45 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 45 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 46 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 46 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 47 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 47 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 48 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 48 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 49 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 49 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 50 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 50 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 51 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 51 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 54 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 54 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 55 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 55 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 56 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 56 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 57 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 57 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 58 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 58 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 59 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 59 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 60 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 60 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 61 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 61 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 63 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 63 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 64 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 64 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 66 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 66 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 67 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 67 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 68 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 68 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 70 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 70 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 71 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 71 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 72 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 72 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 73 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 73 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 74 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 74 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 76 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 76 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 77 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 77 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+incorrect argument "-dict" for "set_property" at line 78 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+incorrect set of required parameters for "set_property" at line 78 of file C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/constrs_1/new/CSTR.xdc
+---------------------------------------------------------------------
+Usage:
+  set_property
+    [-help]
+    [-quiet]
+    attribute
+    value
+    object
+    [{>|>>} <stdoutFile>]
+---------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:40 ; elapsed = 00:00:52 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:40 ; elapsed = 00:00:52 . Memory (MB): peak = 603.918 ; gain = 432.824
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:42 ; elapsed = 00:00:54 . Memory (MB): peak = 614.328 ; gain = 443.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 614.328 ; gain = 443.234
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 614.328 ; gain = 443.234
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 614.328 ; gain = 443.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 614.328 ; gain = 443.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 614.328 ; gain = 443.234
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |     1|
+|2     |CARRY4 |    41|
+|3     |LUT1   |   106|
+|4     |LUT2   |    61|
+|5     |LUT3   |    42|
+|6     |LUT4   |    57|
+|7     |LUT5   |    75|
+|8     |LUT6   |   175|
+|9     |MUXF7  |     4|
+|10    |FDRE   |   152|
+|11    |FDSE   |     4|
+|12    |LD     |    22|
+|13    |IBUF   |     9|
+|14    |OBUF   |    32|
++------+-------+------+
+
+Report Instance Areas: 
++------+----------------+------------------------+------+
+|      |Instance        |Module                  |Cells |
++------+----------------+------------------------+------+
+|1     |top             |                        |   781|
+|2     |  choose_signal |button_signal           |     3|
+|3     |  ensure_signal |button_signal_0         |     3|
+|4     |  fsm           |FSM                     |   454|
+|5     |    choosemode  |choose_mode             |    57|
+|6     |    divider     |Divider                 |    81|
+|7     |    timedec     |time_dec                |   279|
+|8     |  ltctrl        |light_ctrl              |    90|
+|9     |    Bling       |bling                   |    82|
+|10    |      bling_div |Divider__parameterized1 |    81|
+|11    |  pause_signal  |button_signal_1         |     4|
+|12    |  rst_signal    |button_signal_2         |     3|
+|13    |  seg_led       |seg_7_led               |   180|
+|14    |    da_sel      |data_select             |    70|
+|15    |    dv_show     |Divider__parameterized0 |    81|
+|16    |    seg_dec     |seg_decoder             |     7|
++------+----------------+------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 614.328 ; gain = 443.234
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 37 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 614.328 ; gain = 98.809
+Synthesis Optimization Complete : Time (s): cpu = 00:00:43 ; elapsed = 00:00:55 . Memory (MB): peak = 614.328 ; gain = 443.234
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 72 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 22 instances were transformed.
+  LD => LDCE: 22 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+69 Infos, 38 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:42 ; elapsed = 00:00:49 . Memory (MB): peak = 614.328 ; gain = 405.156
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.071 . Memory (MB): peak = 614.328 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 16 15:45:39 2018...

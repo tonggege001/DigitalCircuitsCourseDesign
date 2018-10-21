@@ -1,0 +1,10 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  "simchoosemode_func_synth.v"
+verilog xil_defaultlib  "../../../../Washer.srcs/sources_1/new/choose_mode.v"
+verilog xil_defaultlib  "../../../../Washer.srcs/sim_1/new/simchoosemode.v"
+
+# compile glbl module
+verilog xil_defaultlib "glbl.v"
+
+# Do not sort compile order
+nosort

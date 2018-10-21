@@ -1,0 +1,6 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sources_1/new/choose_mode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module choose_mode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.srcs/sim_1/new/simchoosemode.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module simchoosemode
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/Administor/Desktop/DigitalDesign/Washer/Washer.sim/sim_1/behav/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
